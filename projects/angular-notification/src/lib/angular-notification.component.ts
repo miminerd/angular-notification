@@ -4,14 +4,16 @@ import { Component, OnInit } from '@angular/core';
   selector: 'lib-angular-notification',
   template: `
     <p>
-      angular-notification works!
+      angular-notification works!hhhh
     </p>
   `,
   styles: []
 })
 export class AngularNotificationComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+    console.log('in lib');
+   }
 
   ngOnInit(): void {
   }
