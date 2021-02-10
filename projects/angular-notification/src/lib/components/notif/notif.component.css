@@ -7,6 +7,7 @@
     border: 0px;
     width: 30%;
     border-left: 6px solid #6772e5;
+    position: absolute;
 }
 .title{
     width: 92%;
@@ -18,6 +19,8 @@
 }
 .close{
     cursor: pointer;
+    float: right;
+    margin-right: 5px;
 }
 .notif-body{
     font-size:14px;
@@ -31,4 +34,28 @@
 }
 .yellow{
     border-left: 6px solid #FF9500;  
+}
+.default {
+    border-left: 6px solid #6772e5;
+}
+.top-right{
+    top: 15px;
+    right: 15px;
+}
+.bottom-left{
+    bottom: 15px;
+    left: 15px
+}
+.bottom-right{
+    bottom: 15px;
+    right: 15px
+}
+.top-left{
+    top: 15px;
+    left: 15px;
+}
+.center{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
