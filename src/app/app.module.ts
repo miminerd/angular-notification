@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AngularNotificationModule } from 'angular-notification';
+import { AngularNotificationModule, AngularNotificationService  } from 'angular-notification';
 
 @NgModule({
   declarations: [

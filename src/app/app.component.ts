@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularNotificationService  } from 'angular-notification';
 
 @Component({
   selector: 'app-root',
@@ -8,6 +9,9 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
   title = 'notification';
   setting: any;
+
+  constructor(private Service: AngularNotificationService) { }
+
   ngOnInit(): void {
     this.setting = {
       width: '450px',
@@ -17,5 +21,7 @@ export class AppComponent implements OnInit {
       position: 'center',
       opacity: '1'
     };
+    this.Service.setProperties(this.setting);
+
   }
 }

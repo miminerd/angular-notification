@@ -3,7 +3,7 @@ import { AngularNotificationComponent } from './angular-notification.component';
 import { NotwidthDirective } from './directives/notwidth.directive';
 import { NotifComponent } from './components/notif/notif.component';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { AngularNotificationService } from './angular-notification.service';
 
 
 
@@ -12,6 +12,6 @@ import { BrowserModule } from '@angular/platform-browser';
   imports: [
     BrowserModule
   ],
-  exports: [AngularNotificationComponent, NotifComponent]
+  exports: [AngularNotificationComponent, NotifComponent ]
 })
 export class AngularNotificationModule { }
