@@ -26,7 +26,9 @@ export class NotifComponent implements OnInit {
       title: 'ooooo',
       body: 'ooppp',
       position: 'top right',
-      opacity: '0.6'
+      opacity: '0.6',
+      duration: 40000,
+      background: 'red'
     };
     console.log('eee ', this.Service.getProperties());
     this.setting = this.Service.getProperties();
@@ -42,7 +44,9 @@ export class NotifComponent implements OnInit {
       title: 'hhjjj',
       body: 'poiuztre',
       position: '',
-      opacity: '0.6'
+      opacity: '0.6',
+      duration: 40000,
+      background: 'red'
     };
 
 //    this.DatePicked.emit(this.setting);

@@ -8,8 +8,8 @@ export class NotwidthDirective  implements OnInit  {
 
   constructor(private el: ElementRef) { }
 
-  @Input() notWidth: string;
-  @Input('libNotwidth') highlightColor: string;
+  // @Input() notWidth: string;
+  // @Input('libNotwidth') highlightColor: string;
   @Input() setting: Setting;
   title: any;
   body: any;
@@ -18,8 +18,8 @@ export class NotwidthDirective  implements OnInit  {
     this.el.nativeElement.style.width = width;
   }*/
   ngOnInit(): void {
-    this.highlight(this.highlightColor);
-    this.setWidth(this.notWidth);
+    // this.highlight(this.highlightColor);
+    // this.setWidth(this.notWidth);
     console.log('seee ', JSON.stringify(this.setting));
     this.setUp(this.setting);
   }
@@ -63,10 +63,15 @@ export class NotwidthDirective  implements OnInit  {
     this.el.nativeElement.style.background = setting.background;
 
     // duration
-    this.setDuration(setting.duration);
+    if (setting.duration === undefined) {
+      this.setDuration(20000);
+    } else {
+      this.setDuration(setting.duration);
+    }
 
   }
   private setDuration(time: number) {
+    console.log('in timer');
     setTimeout(() => {
       this.el.nativeElement.style.display = 'none';
     }, time);
