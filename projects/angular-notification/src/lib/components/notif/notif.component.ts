@@ -13,9 +13,6 @@ export class NotifComponent implements OnInit {
   color: string;
   setting: Setting;
   open = true;
-
- // @Output() DatePicked: EventEmitter<any> = new EventEmitter<any>();
-
   constructor(private Service: AngularNotificationService) { }
 
   ngOnInit(): void {
@@ -30,26 +27,7 @@ export class NotifComponent implements OnInit {
       duration: 40000,
       background: 'red'
     };
-    console.log('eee ', this.Service.getProperties());
     this.setting = this.Service.getProperties();
-    console.log('ddd ', this.setting);
-  }
-  change(): void {
-    console.log('in change');
-    this.color = 'green';
-    // this.setting.width = '30%';
-    this.setting = {
-      width: '20px',
-      type: 'warn',
-      title: 'hhjjj',
-      body: 'poiuztre',
-      position: '',
-      opacity: '0.6',
-      duration: 40000,
-      background: 'red'
-    };
-
-//    this.DatePicked.emit(this.setting);
   }
 
   close(): void {

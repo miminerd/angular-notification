@@ -8,19 +8,11 @@ export class NotwidthDirective  implements OnInit  {
 
   constructor(private el: ElementRef) { }
 
-  // @Input() notWidth: string;
-  // @Input('libNotwidth') highlightColor: string;
   @Input() setting: Setting;
   title: any;
   body: any;
 
-  /*private setWidth(width: string) {
-    this.el.nativeElement.style.width = width;
-  }*/
   ngOnInit(): void {
-    // this.highlight(this.highlightColor);
-    // this.setWidth(this.notWidth);
-    console.log('seee ', JSON.stringify(this.setting));
     this.setUp(this.setting);
   }
   private highlight(color: string) {
