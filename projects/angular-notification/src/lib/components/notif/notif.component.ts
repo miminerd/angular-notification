@@ -18,14 +18,14 @@ export class NotifComponent implements OnInit {
   ngOnInit(): void {
     this.color = 'purple';
     this.setting = {
-      width: '100px',
+      width: '300px',
       type: 'warn',
-      title: 'ooooo',
-      body: 'ooppp',
+      title: 'notification title',
+      body: 'this is a message of warning ',
       position: 'bottom right',
       opacity: '1',
-      duration: 40000,
-      background: 'red'
+      duration: 10000,
+      background: 'yellow'
     };
     this.setting = this.Service.getProperties();
   }
