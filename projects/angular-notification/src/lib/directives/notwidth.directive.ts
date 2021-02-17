@@ -64,7 +64,7 @@ export class NotwidthDirective  implements OnInit  {
 
     // duration
     if (setting.duration === undefined) {
-      this.setDuration(20000);
+      this.setDuration(10000);
     } else {
       this.setDuration(setting.duration);
     }
@@ -73,7 +73,9 @@ export class NotwidthDirective  implements OnInit  {
   private setDuration(time: number) {
     console.log('in timer');
     setTimeout(() => {
-      this.el.nativeElement.style.display = 'none';
+      // this.el.nativeElement.style.display = 'none';
+      this.el.nativeElement.style.visibility = 'hidden';
+      this.el.nativeElement.style.opacity = '0';
     }, time);
   }
 

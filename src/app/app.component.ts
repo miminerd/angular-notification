@@ -18,8 +18,7 @@ export class AppComponent implements OnInit {
       type: 'green',
       title: 'uuunjnkkjnjnjnnkj',
       body: 'This is some <b>content</b>',
-      position: 'center',
-      opacity: '0.6',
+      position: 'bottom right',
     };
     this.Service.setProperties(this.setting);
 

@@ -25,8 +25,8 @@ export class NotifComponent implements OnInit {
       type: 'warn',
       title: 'ooooo',
       body: 'ooppp',
-      position: 'top right',
-      opacity: '0.6',
+      position: 'bottom right',
+      opacity: '1',
       duration: 40000,
       background: 'red'
     };
