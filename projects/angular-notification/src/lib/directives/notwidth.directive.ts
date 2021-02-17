@@ -20,15 +20,6 @@ export class NotwidthDirective  implements OnInit  {
   ngOnInit(): void {
     this.highlight(this.highlightColor);
     this.setWidth(this.notWidth);
-    /*this.setting = {
-      width: '20px',
-      type: 'warning',
-      title: 'new title ',
-      body: 'lorum ipsum blala laa ',
-      position: '',
-      opacity: ''
-    };*/
-    // this.setUp(this.setting);
     console.log('seee ', JSON.stringify(this.setting));
     this.setUp(this.setting);
   }
@@ -67,8 +58,21 @@ export class NotwidthDirective  implements OnInit  {
     }
     // opacity
     this.el.nativeElement.style.opacity = setting.opacity;
+
+    // background color
+    this.el.nativeElement.style.background = setting.background;
+
+    // duration
+    this.setDuration(setting.duration);
+
   }
+  private setDuration(time: number) {
+    setTimeout(() => {
+      this.el.nativeElement.style.display = 'none';
+    }, time);
+  }
+
   @HostListener('click') change() {
     console.log(' i see fire');
-}
+  }
 }

@@ -29,6 +29,8 @@ export class NotifComponent implements OnInit {
       opacity: '0.6'
     };
     console.log('eee ', this.Service.getProperties());
+    this.setting = this.Service.getProperties();
+    console.log('ddd ', this.setting);
   }
   change(): void {
     console.log('in change');

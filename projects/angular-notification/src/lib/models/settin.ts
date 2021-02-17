@@ -5,4 +5,6 @@ export interface Setting {
     body: string ;
     position: string;
     opacity: string;
+    background: string;
+    duration: number;
 }
