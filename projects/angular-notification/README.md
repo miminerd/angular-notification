@@ -1,24 +1,71 @@
-# AngularNotification
+# Angular  notifications
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.7.
+Easy to use, highly customizable Angular notification- alert  component.
 
-## Code scaffolding
+## Demo
 
-Run `ng generate component component-name --project angular-notification` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project angular-notification`.
-> Note: Don't forget to add `--project angular-notification` or else it will be added to the default project in your `angular.json` file. 
+- 👉 comming soon 
 
-## Build
+## Setup
 
-Run `ng build angular-notification` to build the project. The build artifacts will be stored in the `dist/` directory.
+`npm install --save angular-notification` 
+Add dependencies to your `app.module.ts`:
+<pre>
+import { AngularNotificationModule} from 'angular-notification';
+         ...
 
-## Publishing
+@NgModule({
+  declarations: [
+    ...
+  ],
+  imports: [
+    ...
+    AngularNotificationModule
+  ],
+  providers: [],
+  bootstrap: [...]
+})
+</pre>
 
-After building your library with `ng build angular-notification`, go to the dist folder `cd dist/angular-notification` and run `npm publish`.
+Add the notification component to your view:
+`<lib-notif></lib-notif>`
 
-## Running unit tests
+Trigger notifications from your class files (component.ts):
 
-Run `ng test angular-notification` to execute the unit tests via [Karma](https://karma-runner.github.io).
+// import the notification service from the angular-notification module
+`import { AngularNotificationService  } from 'angular-notification';`
 
-## Further help
+<pre>
+  // inject the service in your constructor class
+  constructor(private Service: AngularNotificationService) { }
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+  // then set up the configuration of the notification component
+  // in any method where you want to implement it
+  // in this example I am usuing it on ngOnInit() this way the notification will be
+  // viewable in my component view directly
+
+  ngOnInit(): void {
+    // setting object to set up the configuration
+    this.setting = {
+      width: '450px',
+      type: 'green',
+      title: 'uuunjnkkjnjnjnnkj',
+      body: 'This is some <b>content</b>',
+      position: 'bottom right
+    };
+
+    // pass the setting to the service so it can be applied in the notification component. 
+    this.Service.setProperties(this.setting);
+  }
+</pre>
+
+## Usage
+
+Here is the list of the configurations you can pass to the notification component
+Note that all props are optional.
+
+comming soon 
+
+
+![Alt text](https://user-images.githubusercontent.com/1577802/36840220-21beb89c-1d3c-11e8-98a4-45fc334842cf.png)
