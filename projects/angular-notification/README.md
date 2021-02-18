@@ -9,6 +9,7 @@ Easy to use, highly customizable Angular notification- alert  component.
 ## Setup
 
 `npm install --save angular-notification`\
+
 Add dependencies to your `app.module.ts`:
 
  ```js

@@ -15,10 +15,11 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.setting = {
       width: '450px',
-      type: 'green',
-      title: 'uuunjnkkjnjnjnnkj',
-      body: 'This is some <b>content</b>',
-      position: 'bottom right',
+      type: 'danger',
+      title: 'title of the notification',
+      body: 'this is some <b>content</b> of the notification support html tags as well',
+      position: 'top right',
+      duration: 70000,
     };
     this.Service.setProperties(this.setting);
 

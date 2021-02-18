@@ -30,7 +30,7 @@ export class NotwidthDirective  implements OnInit  {
       this.el.nativeElement.classList.add('yellow');
     } else if ( setting.type === 'danger') {
       this.el.nativeElement.classList.add('red');
-    } else if ( setting.type === 'okay') {
+    } else if ( setting.type === 'success') {
       this.el.nativeElement.classList.add('green');
     } else {
       this.el.nativeElement.classList.add('default');
