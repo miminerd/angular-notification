@@ -28,7 +28,7 @@ import { AngularNotificationModule} from 'angular-notification';
 </pre>
 
 Add the notification component to your view:\
-`<lib-notif></lib-notif>`\
+`<lib-notif></lib-notif>`
 
 Trigger notifications from your class files (component.ts):
 
@@ -36,8 +36,8 @@ Trigger notifications from your class files (component.ts):
 
 
   // import the notification service from the angular-notification module
-  <span class="pl-k">import <span class="pl-v">{ AngularNotificationService  }</span> </span>
-  from <span class="pl-s">'angular-notification'</span>
+  <span style='color: red;'>import <span style='color: blue;'>{ AngularNotificationService  }</span> </span>
+  from <span style='color: orange;'>'angular-notification'</span>
  
  
  // import { AngularNotificationService  } from 'angular-notification';
