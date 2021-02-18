@@ -28,6 +28,7 @@ export class NotifComponent implements OnInit {
       background: 'yellow'
     };
     this.setting = this.Service.getProperties();
+    console.log('juuuu ', this.setting);
   }
 
   close(): void {

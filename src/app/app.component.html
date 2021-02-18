@@ -1,5 +1,7 @@
 
 <lib-angular-notification ></lib-angular-notification>
-<lib-notif  ></lib-notif>
+<lib-notif  *ngIf='red'></lib-notif>
 <!--<lib-notif></lib-notif>-->
+<button (click) = addElement()>red notification</button>
+<div #parent> </div> 
 <router-outlet></router-outlet>

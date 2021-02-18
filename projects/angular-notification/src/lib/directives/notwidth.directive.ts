@@ -63,7 +63,6 @@ export class NotwidthDirective  implements OnInit  {
 
   }
   private setDuration(time: number) {
-    console.log('in timer');
     setTimeout(() => {
       // this.el.nativeElement.style.display = 'none';
       this.el.nativeElement.style.visibility = 'hidden';
