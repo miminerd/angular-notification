@@ -10,7 +10,8 @@ Easy to use, highly customizable Angular notification- alert  component.
 
 `npm install --save angular-notification`\
 Add dependencies to your `app.module.ts`:
-<pre>
+
+ ```js
 import { AngularNotificationModule} from 'angular-notification';
          ...
 
@@ -25,22 +26,17 @@ import { AngularNotificationModule} from 'angular-notification';
   providers: [],
   bootstrap: [...]
 })
-</pre>
+
+```
 
 Add the notification component to your view:\
 `<lib-notif></lib-notif>`
 
 Trigger notifications from your class files (component.ts):
 
-<pre>
-
-
+ ```js
   // import the notification service from the angular-notification module
-  <span style='color: red;'>import <span style='color: blue;'>{ AngularNotificationService  }</span> </span>
-  from <span style='color: orange;'>'angular-notification'</span>
- 
- 
- // import { AngularNotificationService  } from 'angular-notification';
+  import { AngularNotificationService  } from 'angular-notification';
 
 
   // inject the service in your constructor class
@@ -65,7 +61,7 @@ Trigger notifications from your class files (component.ts):
     // pass the setting to the service so it can be applied in the notification component. 
     this.Service.setProperties(this.setting);
   }
-</pre>
+  ```
 
 ## Usage
 
