@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap');
+
+.notif-container{
+    position: relative;
+}
 .notif-box{
     font-family: 'Noto Sans SC', sans-serif;
     padding: 10px;
@@ -10,6 +14,7 @@
     border-left: 6px solid #6772e5;
     position: absolute;
     transition: opacity 600ms, visibility 600ms;
+    margin-top: 10px;
 }
 .title{
     width: 92%;
@@ -45,7 +50,7 @@
     right: 15px;
 }
 .bottom-left{
-    bottom: 15px;
+    bottom: -30vh;
     left: 15px
 }
 .bottom-right{
