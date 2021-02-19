@@ -57,7 +57,7 @@ export class AppComponent implements OnInit {
       type: 'danger',
       title: 'this an error message',
       body: '<b>Something went wrong </b> check it out',
-      position: 'top right',
+      position: 'center',
       duration: 70000
     };
     this.Service.setProperties(this.setting);
