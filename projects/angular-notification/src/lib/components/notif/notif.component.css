@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap');
 
 .notif-container{
-    position: relative;
+    /*position: relative;*/
 }
 .notif-box{
     font-family: 'Noto Sans SC', sans-serif;

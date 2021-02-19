@@ -39,6 +39,17 @@ export class NotwidthDirective  implements OnInit  {
     // position
     if ( setting.position === 'bottom right') {
       this.el.nativeElement.classList.add('bottom-right');
+      /*this.el.nativeElement.style.bottom = this.el.nativeElement.offsetTop + 100 + 'px';
+      console.log('whhole ', this.el.nativeElement.style.bottom);*/
+     /* console.log('hh ', this.el.nativeElement.parentElement.nextSibling);
+      let i = 0;
+      if (  this.el.nativeElement.parentElement.nextSibling != null ) {
+         i++;
+         console.log('dddff ', this.el.nativeElement.parentElement.offsetTop);
+         this.el.nativeElement.style.bottom = this.el.nativeElement.parentElement.offsetTop - 10 + 'px';
+         console.log('ffssssssss', i);
+      }*/
+      this.el.nativeElement.style.bottom = this.el.nativeElement.parentElement.offsetTop - 40 + 'px';
     } else if ( setting.position === 'top left') {
       this.el.nativeElement.classList.add('top-left');
     } else if ( setting.position === 'bottom left') {

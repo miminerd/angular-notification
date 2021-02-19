@@ -58,8 +58,7 @@ export class AppComponent implements OnInit {
       title: 'this an error message',
       body: '<b>Something went wrong </b> check it out',
       position: 'bottom right',
-      duration: 70000,
-      background: 'crimson'
+      duration: 70000
     };
     this.Service.setProperties(this.setting);
     const childComponent = this.componentFactoryResolver.resolveComponentFactory( NotifComponent );

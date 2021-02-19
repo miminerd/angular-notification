@@ -10,14 +10,12 @@ import { AngularNotificationService } from '../../angular-notification.service';
 })
 export class NotifComponent implements OnInit {
 
-  color: string;
   setting: Setting;
   open = true;
   constructor(private Service: AngularNotificationService) { }
 
   ngOnInit(): void {
-    this.color = 'purple';
-    this.setting = {
+   /* this.setting = {
       width: '300px',
       type: 'warn',
       title: 'notification title',
@@ -26,7 +24,8 @@ export class NotifComponent implements OnInit {
       opacity: '1',
       duration: 10000,
       background: 'yellow'
-    };
+    };*/
+    this.setting = null;
     this.setting = this.Service.getProperties();
     console.log('juuuu ', this.setting);
   }
