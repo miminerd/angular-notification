@@ -57,6 +57,7 @@ export class NotwidthDirective  implements OnInit  {
     } else if ( setting.position === 'center') {
       this.el.nativeElement.classList.add('center');
     } else {
+      this.el.nativeElement.parentElement.style.position = 'relative';
       this.el.nativeElement.classList.add('top-right');
     }
     // opacity
