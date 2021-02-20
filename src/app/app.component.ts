@@ -18,16 +18,6 @@ export class AppComponent implements OnInit {
               private componentFactoryResolver: ComponentFactoryResolver) { }
 
   ngOnInit(): void {
-   /* this.setting = {
-      width: '450px',
-      type: 'warn',
-      title: 'title of the notification',
-      body: 'this is some <b>content</b> of the notification support html tags as well',
-      position: 'top right',
-      duration: 70000,
-    };
-    this.Service.setProperties(this.setting);*/
-
   }
 
   getRedNotification(): void {
@@ -58,6 +48,32 @@ export class AppComponent implements OnInit {
       title: 'this an error message',
       body: '<b>Something went wrong </b> check it out',
       position: 'center',
+      duration: 70000
+    };
+    this.Service.setProperties(this.setting);
+    const childComponent = this.componentFactoryResolver.resolveComponentFactory( NotifComponent );
+    this.componentRef = this.target.createComponent(childComponent);
+  }
+  getWarningNotification() {
+    this.setting = {
+      width: '300px',
+      type: 'warn',
+      title: 'this a warning  message',
+      body: '<b>There are some warnings </b> check it out',
+      position: 'top right',
+      duration: 70000
+    };
+    this.Service.setProperties(this.setting);
+    const childComponent = this.componentFactoryResolver.resolveComponentFactory( NotifComponent );
+    this.componentRef = this.target.createComponent(childComponent);
+  }
+  getSuccessNotification() {
+    this.setting = {
+      width: '300px',
+      type: 'success',
+      title: 'this a sucess message',
+      body: '<b>Everything is in order  </b> cool',
+      position: 'bottom right',
       duration: 70000
     };
     this.Service.setProperties(this.setting);

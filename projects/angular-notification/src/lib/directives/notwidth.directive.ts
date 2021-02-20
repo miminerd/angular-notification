@@ -38,19 +38,19 @@ export class NotwidthDirective  implements OnInit  {
 
     // position
     if ( setting.position === 'bottom right') {
+      this.el.nativeElement.parentElement.parentElement.previousSibling.remove();
       this.el.nativeElement.classList.add('bottom-right');
-      this.el.nativeElement.style.bottom = this.el.nativeElement.parentElement.offsetTop - 40 + 'px';
     } else if ( setting.position === 'top left') {
-      this.el.nativeElement.parentElement.style.position = 'relative';
+      this.el.nativeElement.parentElement.parentElement.previousSibling.remove();
       this.el.nativeElement.classList.add('top-left');
     } else if ( setting.position === 'bottom left') {
+      this.el.nativeElement.parentElement.parentElement.previousSibling.remove();
       this.el.nativeElement.classList.add('bottom-left');
-      this.el.nativeElement.style.bottom = this.el.nativeElement.parentElement.offsetTop - 40 + 'px';
     } else if ( setting.position === 'center') {
-      this.el.nativeElement.parentElement.style.position = 'relative';
+      this.el.nativeElement.parentElement.parentElement.previousSibling.remove();
       this.el.nativeElement.classList.add('center');
     } else {
-      this.el.nativeElement.parentElement.style.position = 'relative';
+      this.el.nativeElement.parentElement.parentElement.previousSibling.remove();
       this.el.nativeElement.classList.add('top-right');
     }
     // opacity
