@@ -155,3 +155,8 @@ in the setting object
 </table>
 
 
+## Contribution
+I welcome issues and pull requests on [pr](https://github.com/miminerd/ngSocialBtnLogin)
+
+ ## Author👩🏻‍💻
+[Juda Buchahda](https://juda-landing-cv.herokuapp.com)

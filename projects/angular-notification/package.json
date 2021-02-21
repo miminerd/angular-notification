@@ -1,6 +1,6 @@
 {
   "name": "angular-notification",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "peerDependencies": {
     "@angular/common": "^9.0.7",
     "@angular/core": "^9.0.7",
@@ -18,5 +18,5 @@
   ],
   "author": "Juda Buchahda <jouda.bouchahda@gmail.com>",
   "license": "MIT",
-  "homepage": "https://github.com/miminerd/ngSocialBtnLogin"
+  "homepage": "https://github.com/miminerd/angular-notification"
 }
