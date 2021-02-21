@@ -10,7 +10,7 @@ Easy to use, highly customizable Angular notification- alert  component.
 
 ## Setup
 
-`npm install --save angular-notification`\
+`npm install --save angular-notification`
 
 Add dependencies to your `app.module.ts`:
 
@@ -32,8 +32,13 @@ import { AngularNotificationModule} from 'angular-notification';
 
 ```
 
-Add the notification component Statically to your view:\
+There are 2 ways to use the notification element; \
+inject it directly in your view and customize the element configuration in NgOnInit() for example\
 `<lib-notif></lib-notif>`
+
+<strong>Or </strong> 
+show the notification element on an event trigger like addNotifElement() for example \
+explained below
 
 Trigger notifications from your class files (component.ts):
 
