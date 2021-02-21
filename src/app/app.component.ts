@@ -48,7 +48,8 @@ export class AppComponent implements OnInit {
       title: 'this an error message',
       body: '<b>Something went wrong </b> check it out',
       position: 'center',
-      duration: 70000
+      duration: 60000,
+      background: '#fff'
     };
     this.Service.setProperties(this.setting);
     const childComponent = this.componentFactoryResolver.resolveComponentFactory( NotifComponent );
@@ -61,7 +62,7 @@ export class AppComponent implements OnInit {
       title: 'this a warning  message',
       body: '<b>There are some warnings </b> check it out',
       position: 'top right',
-      duration: 70000
+      duration: 5000
     };
     this.Service.setProperties(this.setting);
     const childComponent = this.componentFactoryResolver.resolveComponentFactory( NotifComponent );
@@ -74,7 +75,20 @@ export class AppComponent implements OnInit {
       title: 'this a sucess message',
       body: '<b>Everything is in order  </b> cool',
       position: 'bottom right',
-      duration: 70000
+      duration: 5000
+    };
+    this.Service.setProperties(this.setting);
+    const childComponent = this.componentFactoryResolver.resolveComponentFactory( NotifComponent );
+    this.componentRef = this.target.createComponent(childComponent);
+  }
+  getCustomizedNotification() {
+    this.setting = {
+      type: 'default',
+      title: 'this is a custom notification',
+      body: '<h3>with a bright blue background</h3>',
+      position: 'top left',
+      duration: 70000,
+      background : '#aff',
     };
     this.Service.setProperties(this.setting);
     const childComponent = this.componentFactoryResolver.resolveComponentFactory( NotifComponent );
