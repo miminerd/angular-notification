@@ -1,4 +1,11 @@
-![Alt text](https://user-images.githubusercontent.com/1577802/36840220-21beb89c-1d3c-11e8-98a4-45fc334842cf.png)
+ ```html
+<p align="right">
+  <a href="https://www.buymeacoffee.com/yev" rel="nofollow">
+  <img width="200" alt="screen shot 2018-03-01 at 10 33 39" src="https://user-images.githubusercontent.com/1577802/36840220-21beb89c-1d3c-11e8-98a4-45fc334842cf.png" style="max-width:100%;">
+  </a>
+</p>
+
+````
 ![Alt text](https://camo.githubusercontent.com/5d0893ba93b18e9359e7d233cf5dd79c0c214fd9ac7b9eb602b664ce2c4452f4/68747470733a2f2f62616467652e667572792e696f2f6a732f7675652d6e6f74696669636174696f6e2e737667)
 # Angular  notifications
 
@@ -37,6 +44,7 @@ inject it directly in your view and customize the element configuration in NgOnI
 `<lib-notif></lib-notif>`
 
 <strong>Or </strong> 
+<br>
 show the notification element on an event trigger like addNotifElement() for example \
 explained below
 
@@ -74,7 +82,7 @@ Trigger notifications from your class files (component.ts):
     this.Service.setProperties(this.setting);
   }
 
-  or another way show the notif element an event fires 
+  // or show the notif element when an event fires 
     addNotifElement() {
     this.setting = {
       width: '300px',
