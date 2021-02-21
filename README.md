@@ -1,5 +1,5 @@
 
-<img align="right" width="100" height="100" src="https://user-images.githubusercontent.com/1577802/36840220-21beb89c-1d3c-11e8-98a4-45fc334842cf.png">
+<img align="right"  src="https://user-images.githubusercontent.com/1577802/36840220-21beb89c-1d3c-11e8-98a4-45fc334842cf.png">
 
 
 ![Alt text](https://camo.githubusercontent.com/5d0893ba93b18e9359e7d233cf5dd79c0c214fd9ac7b9eb602b664ce2c4452f4/68747470733a2f2f62616467652e667572792e696f2f6a732f7675652d6e6f74696669636174696f6e2e737667)
@@ -41,10 +41,10 @@ inject it directly in your view and customize the element configuration in NgOnI
 
 <strong>Or </strong> 
 <br>
-show the notification element on an event trigger like addNotifElement() for example \
+show the notification element when an event trigger like addNotifElement() for example \
 explained below
 
-Trigger notifications from your class files (component.ts):
+In your component.ts:
 
  ```js
   // import the notification service from the angular-notification module
@@ -58,11 +58,7 @@ Trigger notifications from your class files (component.ts):
 
 
   // then set up the configuration of the notification component 
-  // in any method where you want to implement it statically in NgOnInit()
-  // or dynamically show the component from an event click for example
-
-  // in this example I am usuing it on ngOnInit() this way the notification will be
-  // viewable in my component view directly
+  // ngOnInit(); if you want the notification element to show up directly in your view
 
   ngOnInit(): void {
     // setting object to set up the configuration
