@@ -1,5 +1,5 @@
 
-<img align="right" width="50%"  src="https://user-images.githubusercontent.com/1577802/36840220-21beb89c-1d3c-11e8-98a4-45fc334842cf.png">
+<img align="right" width="200px"  src="https://user-images.githubusercontent.com/1577802/36840220-21beb89c-1d3c-11e8-98a4-45fc334842cf.png">
 
 
 ![Alt text](https://camo.githubusercontent.com/5d0893ba93b18e9359e7d233cf5dd79c0c214fd9ac7b9eb602b664ce2c4452f4/68747470733a2f2f62616467652e667572792e696f2f6a732f7675652d6e6f74696669636174696f6e2e737667)
@@ -96,6 +96,43 @@ In your component.ts:
 Here is the list of the configurations you can pass to the notification component
 Note that all props are optional.
 
-comming soon 
+
+<table>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+  <tr>
+    <td>Ernst Handel</td>
+    <td>Roland Mendel</td>
+    <td>Austria</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Yoshi Tannamuri</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+  </tr>
+</table>
 
 
