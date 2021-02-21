@@ -38,8 +38,6 @@ export class AppComponent implements OnInit {
       background: 'crimson'
     };
     this.Service.setProperties(this.setting);
-  //  return `<lib-notif> </lib-notif>`;
-
   }
   addElement() {
     this.setting = {
@@ -48,7 +46,7 @@ export class AppComponent implements OnInit {
       title: 'this an error message',
       body: '<b>Something went wrong </b> check it out',
       position: 'center',
-      duration: 60000,
+      duration: 4000,
       background: '#fff'
     };
     this.Service.setProperties(this.setting);

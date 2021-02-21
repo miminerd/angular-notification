@@ -1,27 +1,96 @@
-# Notification
+![Alt text](https://user-images.githubusercontent.com/1577802/36840220-21beb89c-1d3c-11e8-98a4-45fc334842cf.png)
+![Alt text](https://camo.githubusercontent.com/5d0893ba93b18e9359e7d233cf5dd79c0c214fd9ac7b9eb602b664ce2c4452f4/68747470733a2f2f62616467652e667572792e696f2f6a732f7675652d6e6f74696669636174696f6e2e737667)
+# Angular  notifications
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.1.
+Easy to use, highly customizable Angular notification- alert  component.
 
-## Development server
+## Demo
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- 👉 comming soon 
 
-## Code scaffolding
+## Setup
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+`npm install --save angular-notification`\
 
-## Build
+Add dependencies to your `app.module.ts`:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+ ```js
+import { AngularNotificationModule} from 'angular-notification';
+         ...
 
-## Running unit tests
+@NgModule({
+  declarations: [
+    ...
+  ],
+  imports: [
+    ...
+    AngularNotificationModule
+  ],
+  providers: [],
+  bootstrap: [...]
+})
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```
 
-## Running end-to-end tests
+Add the notification component Statically to your view:\
+`<lib-notif></lib-notif>`
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Trigger notifications from your class files (component.ts):
 
-## Further help
+ ```js
+  // import the notification service from the angular-notification module
+  import { AngularNotificationService  } from 'angular-notification';
+  import { Component, OnInit, ViewChild, ViewContainerRef, ComponentFactoryResolver, ComponentRef } from '@angular/core';
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+  // inject the service in your constructor class
+  constructor(private Service: AngularNotificationService,
+              private componentFactoryResolver: ComponentFactoryResolver) { }
+
+
+  // then set up the configuration of the notification component 
+  // in any method where you want to implement it statically in NgOnInit()
+  // or dynamically show the component from an event click for example
+
+  // in this example I am usuing it on ngOnInit() this way the notification will be
+  // viewable in my component view directly
+
+  ngOnInit(): void {
+    // setting object to set up the configuration
+    this.setting = {
+      width: '450px',
+      type: 'green',
+      title: 'Notication title',
+      body: 'The notification will viewable directly in your component',
+      position: 'bottom right
+    };
+
+    // pass the setting to the service so it can be applied in the notification component. 
+    this.Service.setProperties(this.setting);
+  }
+
+  or another way show the notif element an event fires 
+    addNotifElement() {
+    this.setting = {
+      width: '300px',
+      type: 'danger',
+      title: 'this an error message',
+      body: '<b>Something went wrong </b> check it out',
+      position: 'center',
+      duration: 4000,
+      background: '#fff'
+    };
+    this.Service.setProperties(this.setting);
+    const childComponent = this.componentFactoryResolver.resolveComponentFactory( NotifComponent );
+    this.componentRef = this.target.createComponent(childComponent);
+  }
+  ```
+
+## Usage
+
+Here is the list of the configurations you can pass to the notification component
+Note that all props are optional.
+
+comming soon 
+
+
