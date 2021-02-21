@@ -5,5 +5,18 @@
     "@angular/common": "^9.0.7",
     "@angular/core": "^9.0.7",
     "tslib": "^1.10.0"
-  }
+  
+  },
+  "keywords": [
+    "angular",
+    "web",
+    "notification",
+    "alert",
+    "component",
+    "typescript",
+    "frontend"
+  ],
+  "author": "Juda Buchahda <jouda.bouchahda@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/miminerd/ngSocialBtnLogin"
 }

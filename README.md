@@ -94,7 +94,7 @@ In your component.ts:
 ## Usage
 
 Here is the list of the configurations you can pass to the notification component\
-Note that all props are optional.
+in the setting object
 
 
 <table>
@@ -106,13 +106,13 @@ Note that all props are optional.
   </tr>
   <tr>
     <td>type</td>
-    <td>'warn', 'danger', 'success','default'</td>
+    <td>'warn',  'danger',  'success',  'default'</td>
     <td>'default'</td>
     <td>type of the notification: warn, danger, ...</td>
   </tr>
   <tr>
     <td>position</td>
-    <td>'bottom right','bottom left', 'top right', 'top left' </td>
+    <td>'bottom right', 'bottom left', 'top right', 'top left',  'center' </td>
     <td>'top left'</td>
     <td>Part of the screen where notifications will pop out</td>
   </tr>

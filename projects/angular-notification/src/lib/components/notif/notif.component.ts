@@ -25,7 +25,6 @@ export class NotifComponent implements OnInit {
       duration: 10000,
       background: 'yellow'
     };*/
-    this.setting = null;
     this.setting = this.Service.getProperties();
     console.log('juuuu ', this.setting);
   }

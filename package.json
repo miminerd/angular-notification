@@ -1,6 +1,9 @@
 {
   "name": "notification",
   "version": "0.0.0",
+  "author": "Juda Buchahda <jouda.bouchahda@gmail.com>",
+  "description": "Easy to use, highly customizable Angular notification/ alert component.",
+  "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "node server.js",
@@ -9,7 +12,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "~9.0.0",
     "@angular/common": "~9.0.0",
