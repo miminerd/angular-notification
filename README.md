@@ -93,45 +93,64 @@ In your component.ts:
 
 ## Usage
 
-Here is the list of the configurations you can pass to the notification component
+Here is the list of the configurations you can pass to the notification component\
 Note that all props are optional.
 
 
 <table>
   <tr>
-    <th>Company</th>
-    <th>Contact</th>
-    <th>Country</th>
+    <th>Name</th>
+    <th>Type</th>
+    <th>Default</th>
+     <th>Description</th>
   </tr>
   <tr>
-    <td>Alfreds Futterkiste</td>
-    <td>Maria Anders</td>
-    <td>Germany</td>
+    <td>type</td>
+    <td>'warn', 'danger', 'success','default'</td>
+    <td>'default'</td>
+    <td>type of the notification: warn, danger, ...</td>
   </tr>
   <tr>
-    <td>Centro comercial Moctezuma</td>
-    <td>Francisco Chang</td>
-    <td>Mexico</td>
+    <td>position</td>
+    <td>'bottom right','bottom left', 'top right', 'top left' </td>
+    <td>'top left'</td>
+    <td>Part of the screen where notifications will pop out</td>
   </tr>
   <tr>
-    <td>Ernst Handel</td>
-    <td>Roland Mendel</td>
-    <td>Austria</td>
+    <td>opacity</td>
+    <td>number </td>
+    <td>1</td>
+    <td>Opacity of the notification element</td>
   </tr>
   <tr>
-    <td>Island Trading</td>
-    <td>Helen Bennett</td>
-    <td>UK</td>
+    <td>Background</td>
+    <td>string</td>
+    <td>'#fff'</td>
+    <td> color background of the notification element</td>
   </tr>
   <tr>
-    <td>Laughing Bacchus Winecellars</td>
-    <td>Yoshi Tannamuri</td>
-    <td>Canada</td>
+    <td>title</td>
+    <td>string</td>
+    <td></td>
+    <td>the notification title</td>
   </tr>
   <tr>
-    <td>Magazzini Alimentari Riuniti</td>
-    <td>Giovanni Rovelli</td>
-    <td>Italy</td>
+    <td>body</td>
+    <td>html</td>
+    <td></td>
+    <td>the notification content you can warp html tag in it</td>
+  </tr>
+  <tr>
+    <td>duration</td>
+    <td>number</td>
+    <td>4000</td>
+    <td> Time (in ms) to keep the notification on screen</td>
+  </tr>
+  <tr>
+    <td>width</td>
+    <td>string</td>
+    <td>30%</td>
+    <td> width of the notif element i px or %</td>
   </tr>
 </table>
 

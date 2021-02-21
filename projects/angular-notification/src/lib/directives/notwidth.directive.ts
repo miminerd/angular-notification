@@ -61,7 +61,7 @@ export class NotwidthDirective  implements OnInit  {
 
     // duration
     if (setting.duration === undefined) {
-      this.setDuration(10000);
+      this.setDuration(4000);
     } else {
       this.setDuration(setting.duration);
     }
