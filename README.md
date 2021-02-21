@@ -1,11 +1,7 @@
- ```html
-<p align="right">
-  <a href="https://www.buymeacoffee.com/yev" rel="nofollow">
-  <img width="200" alt="screen shot 2018-03-01 at 10 33 39" src="https://user-images.githubusercontent.com/1577802/36840220-21beb89c-1d3c-11e8-98a4-45fc334842cf.png" style="max-width:100%;">
-  </a>
-</p>
 
-````
+<img align="right" width="100" height="100" src="https://user-images.githubusercontent.com/1577802/36840220-21beb89c-1d3c-11e8-98a4-45fc334842cf.png">
+
+
 ![Alt text](https://camo.githubusercontent.com/5d0893ba93b18e9359e7d233cf5dd79c0c214fd9ac7b9eb602b664ce2c4452f4/68747470733a2f2f62616467652e667572792e696f2f6a732f7675652d6e6f74696669636174696f6e2e737667)
 # Angular  notifications
 
