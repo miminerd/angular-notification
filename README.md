@@ -164,7 +164,7 @@ ng serve
 ```
 
 ## Contribution
-I welcome issues and pull requests on [pr](https://github.com/miminerd/ngSocialBtnLogin)
+I welcome issues and pull requests on [pr](https://github.com/miminerd/angular-notification/pulls)
 
  ## Author👩🏻‍💻
 [Juda Buchahda](https://juda-landing-cv.herokuapp.com)
