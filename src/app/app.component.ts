@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild, ViewContainerRef, ComponentFactoryResolver, ComponentRef } from '@angular/core';
-import { AngularNotificationService ,  NotifComponent  } from 'angular-notification';
+import { AngularNotificationService ,  NotifComponent  } from 'ng-notification';
 
 @Component({
   selector: 'app-root',

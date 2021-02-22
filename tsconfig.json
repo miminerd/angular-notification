@@ -22,6 +22,10 @@
       "angular-notification": [
         "dist/angular-notification/angular-notification",
         "dist/angular-notification"
+      ],
+      "ng-notification": [
+        "dist/ng-notification/ng-notification",
+        "dist/ng-notification"
       ]
     }
   },
