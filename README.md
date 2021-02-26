@@ -13,7 +13,8 @@ Easy to use, highly customizable Angular notification- alert  component.
 
 ## Setup
 
-`npm install --save ng-notification`
+`npm i --save angular-notification-alert`
+
 
 Add dependencies to your `app.module.ts`:
 
@@ -162,7 +163,7 @@ npm install
 ng serve
 
 ```
-app is bieng served at: http://localhost:4200
+app is being served at: http://localhost:4200
 
 ## Contribution
 I welcome issues and pull requests on [pr](https://github.com/miminerd/angular-notification/pulls)
