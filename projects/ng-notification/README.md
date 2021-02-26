@@ -18,7 +18,7 @@ Easy to use, highly customizable Angular notification- alert  component.
 Add dependencies to your `app.module.ts`:
 
  ```js
-import { AngularNotificationModule} from 'ng-notification';
+import { AngularNotificationModule} from 'angular-notification-alert';
          ...
 
 @NgModule({
@@ -39,30 +39,14 @@ There are 2 ways to use the notification element; \
 inject it directly in your view and customize the element configuration in NgOnInit() for example\
 `<lib-notif></lib-notif>`
 
-<strong>Or </strong> 
-<br>
-show the notification element when an event trigger like addNotifElement() for example \
-explained below
 
-In your component.ts:
-
- ```js
-  // import the notification service from the angular-notification module
-  import { AngularNotificationService  } from 'angular-notification';
-  import { Component, OnInit, ViewChild, ViewContainerRef, ComponentFactoryResolver, ComponentRef } from '@angular/core';
-
-
-  // inject the service in your constructor class
-  constructor(private Service: AngularNotificationService,
-              private componentFactoryResolver: ComponentFactoryResolver) { }
-
-
+```js
   // then set up the configuration of the notification component 
   // ngOnInit(); if you want the notification element to show up directly in your view
 
   ngOnInit(): void {
     // setting object to set up the configuration
-    this.setting = {
+    const setting = {
       width: '450px',
       type: 'green',
       title: 'Notication title',
@@ -71,12 +55,40 @@ In your component.ts:
     };
 
     // pass the setting to the service so it can be applied in the notification component. 
-    this.Service.setProperties(this.setting);
+    this.Service.setProperties(setting);
   }
 
+ ```
+
+<strong>Or </strong> 
+<br>
+show the notification element on an event-trigger like addNotifElement() for example \
+explained below
+
+In your view.html
+ ```html
+ <div #parent> </div> 
+ ```
+
+In your component.ts:
+
+ ```js
+  // import the notification service from the angular-notification module
+  import { AngularNotificationService, NotifComponent  } from 'angular-notification-alert';
+  import { Component, OnInit, ViewChild, ViewContainerRef, ComponentFactoryResolver, ComponentRef } from '@angular/core';
+
+
+
+  @ViewChild('parent', {read: ViewContainerRef}) target: ViewContainerRef;
+  private componentRef: ComponentRef<any>;
+  // inject the service in your constructor class
+  constructor(private Service: AngularNotificationService,
+              private componentFactoryResolver: ComponentFactoryResolver) { }
+
+
   // or show the notif element when an event fires 
-    addNotifElement() {
-    this.setting = {
+  addNotifElement() {
+    let setting = {
       width: '300px',
       type: 'danger',
       title: 'this an error message',
@@ -85,11 +97,12 @@ In your component.ts:
       duration: 4000,
       background: '#fff'
     };
-    this.Service.setProperties(this.setting);
+    this.Service.setProperties(setting);
     const childComponent = this.componentFactoryResolver.resolveComponentFactory( NotifComponent );
     this.componentRef = this.target.createComponent(childComponent);
   }
   ```
+
 
 ## Usage
 
