@@ -2,10 +2,10 @@ const express = require('express');
 
 const app = express();
 
-app.use(express.static('./dist/notification'));
+app.use(express.static('./dist/ng-notification'));
 
 app.get('/*', (req, res) =>
-    res.sendFile('index.html', {root: 'dist/notification/'}),
+    res.sendFile('index.html', {root: 'dist/ng-notification/'}),
 );
 
 app.listen(process.env.PORT || 8080);
