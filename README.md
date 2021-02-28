@@ -1,19 +1,21 @@
+# Angular  notifications
+
+Easy to use, highly customizable Angular notification- alert  component.
 
 <img align="right" width="200px"  src="https://user-images.githubusercontent.com/1577802/36840220-21beb89c-1d3c-11e8-98a4-45fc334842cf.png">
 
 
 ![Alt text](https://camo.githubusercontent.com/5d0893ba93b18e9359e7d233cf5dd79c0c214fd9ac7b9eb602b664ce2c4452f4/68747470733a2f2f62616467652e667572792e696f2f6a732f7675652d6e6f74696669636174696f6e2e737667)
-# Angular  notifications
-
-Easy to use, highly customizable Angular notification- alert  component.
 
 ## Demo
 
-- 👉 comming soon 
+- 👉 [demo](https://angular-notification.herokuapp.com/)
+![Alt text](./src/assets/not.PNG)
+
 
 ## Setup
 
-`npm i angular-notification-alert`
+`npm i angular-notification-alert --save`
 
 
 Add dependencies to your `app.module.ts`:
@@ -151,7 +153,7 @@ in the setting object
     <td>width</td>
     <td>string</td>
     <td>30%</td>
-    <td> width of the notif element i px or %</td>
+    <td> width of the notif element in px or %</td>
   </tr>
 </table>
 
