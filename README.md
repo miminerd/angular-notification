@@ -4,7 +4,7 @@ Easy to use, highly customizable Angular notification- alert  component.
 <a href="https://www.buymeacoffee.com/judaBuchahda" target="_blank"><img align="right" width="200px"  src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee"></a>
 
 
-![Alt text](https://camo.githubusercontent.com/5d0893ba93b18e9359e7d233cf5dd79c0c214fd9ac7b9eb602b664ce2c4452f4/68747470733a2f2f62616467652e667572792e696f2f6a732f7675652d6e6f74696669636174696f6e2e737667)
+<a href="https://badge.fury.io/js/angular-notification-alert"><img src="https://badge.fury.io/js/angular-notification-alert.svg" alt="npm version" height="18"></a>
 
 ## Demo
 
@@ -168,8 +168,8 @@ app is being served at: http://localhost:4200
 
 ## Want to help? and give me support 
 <img align="right" width="100px"  src="https://camo.githubusercontent.com/f5054ffcd4245c10d3ec85ef059e07aacf787b560f83ad4aec2236364437d097/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f636f6e747269627574696f6e732d77656c636f6d652d627269676874677265656e2e7376673f7374796c653d666c6174">
-I welcome issues and pull requests on [pr](https://github.com/miminerd/angular-notification/pulls)\
-If you need something improved, added, or fixed, please contribute and create a pull request.\
+I welcome issues and pull requests on [pr](https://github.com/miminerd/angular-notification/pulls)
+If you need something improved, added, or fixed, please contribute and create a pull request.
 thank you and cheers🍕 🍕\ 
 
  ## Author👩🏻‍💻
