@@ -1,7 +1,7 @@
 # Angular  notifications
 
 Easy to use, highly customizable Angular notification- alert  component.
-<a href="https://www.buymeacoffee.com/judaBuchahda" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important; width: auto !important;" ></a>
+<a href="https://www.buymeacoffee.com/judaBuchahda" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important; width: 150px !important;" ></a>
 
 
 ![Alt text](https://camo.githubusercontent.com/5d0893ba93b18e9359e7d233cf5dd79c0c214fd9ac7b9eb602b664ce2c4452f4/68747470733a2f2f62616467652e667572792e696f2f6a732f7675652d6e6f74696669636174696f6e2e737667)
